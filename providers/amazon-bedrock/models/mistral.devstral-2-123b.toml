@@ -1,0 +1,13 @@
+# https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-devstral-2-123b.html
+# https://aws.amazon.com/bedrock/pricing/ — us-east-1 standard, USD per 1M tokens.
+base_model = "mistral/devstral-2512"
+name = "Devstral 2 123B"
+structured_output = true
+
+[cost]
+input = 0.40
+output = 2.00
+
+[limit]
+context = 256_000
+output = 8_192

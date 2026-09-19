@@ -1,0 +1,47 @@
+# Plume - AI Coding Assistant
+
+## Quick Start
+
+1. **Install dependencies:**
+   ```bash
+   cd backend && npm install
+   cd ../frontend && npm install
+   ```
+
+2. **Start the app:**
+   - Windows: Double-click `start.bat`
+   - Or manually:
+     ```bash
+     # Terminal 1 - Backend
+     cd backend && node dist/server.js
+     
+     # Terminal 2 - Frontend
+     cd frontend && npm run dev
+     ```
+
+3. **Open:** http://localhost:5173
+
+## Features
+
+- AI Chat with GPT-4o, Claude 3, DeepSeek R1, Llama 3.3
+- Auto-model switching on error
+- 5 Modes: Chat, Code, Debug, Agent, Explain
+- Tool system: Shell, File Read/Write/Edit, Git
+- Code execution in chat
+- 120fps GPU-accelerated animations
+- Dark/Light theme
+- Chat persistence (localStorage)
+- Export chat as Markdown
+- Search in chat
+- Keyboard shortcuts
+
+## Keyboard Shortcuts
+
+- `Ctrl+L` - New chat
+- `Ctrl+K` - Focus input
+- `Ctrl+,` - Settings
+- `Ctrl+Shift+D` - Toggle theme
+
+## API Key
+
+Get your API key from [OpenRouter](https://openrouter.ai/) and enter it in Settings.

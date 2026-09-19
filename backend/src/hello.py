@@ -1,0 +1,1 @@
+#!/usr/bin/env python3\ntry: with open('./output.txt', 'w') as f: f.write('Hello, World!'); print('File created successfully'); except Exception as e: with open('error.log', 'w') as f: f.write(f'Error: {e}')

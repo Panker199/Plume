@@ -1,0 +1,8 @@
+{
+  "appId": "com.plume.codingagent",
+  "appName": "Plume",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

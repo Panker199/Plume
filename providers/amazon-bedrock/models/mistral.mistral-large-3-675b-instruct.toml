@@ -1,0 +1,12 @@
+# https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large-3.html
+# https://aws.amazon.com/bedrock/pricing/ — us-east-1 standard, USD per 1M tokens.
+base_model = "mistral/mistral-large-2512"
+structured_output = true
+
+[cost]
+input = 0.50
+output = 1.50
+
+[limit]
+context = 256_000
+output = 8_192

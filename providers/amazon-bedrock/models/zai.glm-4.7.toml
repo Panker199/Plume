@@ -1,0 +1,13 @@
+# https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-4-7.html
+# https://github.com/danny-avila/LibreChat/issues/11974 (Bedrock Converse request)
+# Toggle: additionalModelRequestFields.reasoning_config = "high"; omit for default non-thinking mode.
+# Live 2026-09-09: high/omitted returns/omits reasoningContent; maxTokens=131072 accepted.
+# https://aws.amazon.com/bedrock/pricing/ (US Standard pricing)
+base_model = "zhipuai/glm-4.7"
+reasoning_options = [{ type = "toggle" }]
+structured_output = true
+interleaved = true
+
+[cost]
+input = 0.60
+output = 2.20

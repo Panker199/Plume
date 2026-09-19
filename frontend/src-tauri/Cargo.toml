@@ -1,0 +1,16 @@
+[package]
+name = "plume-coding-agent"
+version = "0.1.0"
+description = "Plume - AI Coding Agent"
+authors = ["Plume Team"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.6", features = ["shell-open"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

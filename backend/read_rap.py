@@ -1,0 +1,1 @@
+print(open('rap.txt', 'r').read())

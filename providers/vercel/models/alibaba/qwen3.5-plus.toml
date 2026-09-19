@@ -1,0 +1,23 @@
+base_model = "alibaba/qwen3.5-plus"
+name = "Qwen 3.5 Plus"
+attachment = true
+
+[[reasoning_options]]
+type = "toggle"
+
+[[reasoning_options]]
+type = "budget_tokens"
+min = 1
+max = 81_920
+
+[cost]
+input = 0.4
+output = 2.5
+cache_read = 0.04
+cache_write = 0.5
+
+[limit]
+output = 64_000
+
+[modalities]
+input = ["text", "image", "pdf"]

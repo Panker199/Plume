@@ -1,0 +1,21 @@
+{
+  "name": "iska-coding-agent",
+  "version": "1.0.0",
+  "description": "Full Stack AI Coding Agent with Rust GUI and Node.js Backend",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run tauri dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run tauri build",
+    "build:backend": "cd backend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
